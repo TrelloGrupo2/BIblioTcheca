@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblio</title>
+    <script src="./class.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="./api.js" type="module"></script>
+
+    <style>
+         th, table, td{
+          border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="usuario">
+        <h2>Add usuario</h2>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <label for="registroAcademico">Registro Academico</label>
+        <input type="text" id="registroAcademico" >
+
+        <label for="data">Data</label>
+        <input type="text" id="data">
+
+        <button id="submitUser" onclick="addUser()">enviar</button>
+    </div>
+    <div id="acervo">
+        <h2>Add ao acervo</h2>
+        <label for="titulo">titulo</label>
+        <input type="text" id="titulo">
+
+        <label for="autor">autor</label>
+        <input type="text" id="autor">
+        
+        <label for="ano">ano</label>
+        <input type="text" id="ano">   
+        <label for="genero" id="labelGenero">genero</label>
+        <select id="genero">
+            <option value="terror">Terror</option>
+            <option value="suspense">Suspense</option>
+            <option value="comedia">Comédia</option>
+            <option value="fantasia">Fantasia</option>
+
+        </select>
+        <select id="select" onchange="selectorAcervo()">
+            <option value="livro">Livro</option>
+            <option value="revista">Revista</option>
+        </select> 
+        <button id="submitItem" onclick="addItem()">enviar</button>
+    </div>
+
+    <div id="emprestar">
+
+        <h2>Emprestar item</h2>
+
+        <label for="RaEmprestar">RA do aluno</label>
+        <input type="text" id="RaEmprestar">
+        
+        <label for="codLivroEmprestar">codigo do livro</label>
+        <input type="text" id="codLivroEmprestar">
+
+        <button  onclick="emprestarItem()">emprestar</button>
+    </div>
+    <div class="devolver">
+
+        <h2>Devolver Item</h2>
+
+        <label for="RaDevolver">RA do aluno</label>
+        <input type="text" id="RaDevolver">
+        
+        <label for="codLivroDevolver">codigo do livro</label>
+        <input type="text" id="codLivroDevolver">
+
+        <button onclick="devolverItem()">Devolver</button>
+    </div>
+
+    <div id="livros">
+        <button id="showAcervo" onclick="showAcervo()">mostrar acervo</button>
+    </div>
+</body>
+</html>
