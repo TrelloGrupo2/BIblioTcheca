@@ -1,0 +1,43 @@
+body {
+    background: #080924;
+}
+
+h1, h2, h3, p, strong, span, label {
+    color: #fff
+}
+
+.addUser {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.input {
+    margin: 13px 0;
+    border-radius: 12px;
+    height: 30px;
+    border: none;
+    background: #0D0E2E;
+    color: #fff
+}
+
+.btnSubmit {
+    background: #119D0E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btnShow {
+    margin-top: 12px;
+    background: #0E489D;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
