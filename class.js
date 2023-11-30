@@ -85,3 +85,12 @@ let biblioteca = new tBiblioteca(acervo,users)
 
 let eu = new Usuario('pedro',1,'05/03/2004')
 biblioteca.addUser(eu);
+eu = new Usuario('gabriel',2,'05/03/2004')
+biblioteca.addUser(eu);
+eu = new Usuario('kauya',3,'05/03/2004')
+biblioteca.addUser(eu);
+eu = new Usuario('gustavo',4,'05/03/2004')
+biblioteca.addUser(eu);
+eu = new Usuario('guilherme',5,'05/03/2004')
+biblioteca.addUser(eu);
+console.log(biblioteca)
